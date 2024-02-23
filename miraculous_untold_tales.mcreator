@@ -1,0 +1,75 @@
+{
+  "mod_elements": [
+    {
+      "name": "LadybugMiraculous",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_miraculous",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/LadybugMiraculousItem.java",
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybug_miraculous.json"
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous"
+    },
+    {
+      "name": "Miraculousous",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miraculousous",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Mother Box"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.miraculous_untold_tales.ladybug_miraculous": "Ladybug Miraculous",
+      "item_group.miraculous_untold_tales.miraculousous": "Miraculousous"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Mother Box",
+        "children": [
+          {
+            "name": "Ladybug Miraculous",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Father Box",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "miraculous_untold_tales",
+    "modName": "Miraculous Untold Tales",
+    "version": "1.0.0",
+    "author": "carso, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.miraculousuntoldtales",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300452316
+}

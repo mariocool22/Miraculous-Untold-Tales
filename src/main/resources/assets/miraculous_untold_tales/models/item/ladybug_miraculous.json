@@ -1,0 +1,7 @@
+{
+  "parent": "miraculous_untold_tales:custom/ladybug_miraculous",
+  "textures": {
+    "4": "miraculous_untold_tales:block/ladybug_miraculous_texture",
+    "particle": "miraculous_untold_tales:item/ladybug_miraculous_texture"
+  }
+}

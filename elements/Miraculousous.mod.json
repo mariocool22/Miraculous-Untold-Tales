@@ -1,0 +1,11 @@
+{
+  "_fv": 57,
+  "_type": "tab",
+  "definition": {
+    "name": "Miraculousous",
+    "icon": {
+      "value": "CUSTOM:LadybugMiraculous"
+    },
+    "showSearch": true
+  }
+}
