@@ -1,0 +1,9 @@
+{
+  "parent": "miraculous_untold_tales:custom/ladybug_miraculous_marinette_camo",
+  "textures": {
+    "0": "miraculous_untold_tales:block/mari_lb_camo_1",
+    "1": "miraculous_untold_tales:block/mari_lb_camo_2",
+    "2": "miraculous_untold_tales:block/mari_lb_camo_3",
+    "particle": "miraculous_untold_tales:item/mari_lb_camo_1"
+  }
+}

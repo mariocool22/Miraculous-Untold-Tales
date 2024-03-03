@@ -26,14 +26,341 @@
         "files": []
       },
       "path": "~/Mother Box"
+    },
+    {
+      "name": "Ladybugmiraculousmaricamo",
+      "type": "curiosbauble",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybugmiraculousmaricamo",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybugmiraculousmaricamo.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/client/renderer/LadybugmiraculousmaricamoRenderer.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/LadybugmiraculousmaricamoItem.java"
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Camos"
+    },
+    {
+      "name": "EARS",
+      "type": "curiosslot",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ears",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/curios/tags/items/ears.json"
+        ]
+      }
+    },
+    {
+      "name": "CatMiraculous",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_miraculous",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/miraculous_untold_tales/models/item/cat_miraculous.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/CatMiraculousItem.java"
+        ]
+      },
+      "path": "~/Mother Box/Cat Miraculous"
+    },
+    {
+      "name": "CatMiraculouscamoAdrian",
+      "type": "curiosbauble",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cat_miraculouscamo_adrian",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/miraculous_untold_tales/models/item/cat_miraculouscamo_adrian.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/CatMiraculouscamoAdrianItem.java"
+        ]
+      },
+      "path": "~/Mother Box/Cat Miraculous/Camos"
+    },
+    {
+      "name": "MiracChoose",
+      "type": "gui",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mirac_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/network/MiracChooseButtonMessage.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/world/inventory/MiracChooseMenu.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/client/gui/MiracChooseScreen.java"
+        ]
+      },
+      "path": "~/Mother Box"
+    },
+    {
+      "name": "LadybugMainMenu",
+      "type": "gui",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_main_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/client/gui/LadybugMainMenuScreen.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/network/LadybugMainMenuButtonMessage.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/world/inventory/LadybugMainMenuMenu.java"
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Gui"
+    },
+    {
+      "name": "LbCamoGui",
+      "type": "gui",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lb_camo_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/world/inventory/LbCamoGuiMenu.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/client/gui/LbCamoGuiScreen.java",
+          "src/main/java/net/mcreator/miraculousuntoldtales/network/LbCamoGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Gui"
+    },
+    {
+      "name": "OpenMiracChoose",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_mirac_choose",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/OpenMiracChooseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mother Box"
+    },
+    {
+      "name": "Menu",
+      "type": "command",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/command/MenuCommand.java"
+        ]
+      },
+      "path": "~/Mother Box"
+    },
+    {
+      "name": "Openlbmainmenu",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openlbmainmenu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/OpenlbmainmenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous"
+    },
+    {
+      "name": "OpenLadybugCamos",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_ladybug_camos",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/OpenLadybugCamosProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous"
+    },
+    {
+      "name": "ButterflyMiraculous",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "butterfly_miraculous",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/miraculous_untold_tales/models/item/butterfly_miraculous.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/ButterflyMiraculousItem.java"
+        ]
+      },
+      "path": "~/Mother Box/Butterfly Miraculous"
+    },
+    {
+      "name": "Butterflymiraculouscamogab",
+      "type": "curiosbauble",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "butterflymiraculouscamogab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/client/renderer/ButterflymiraculouscamogabRenderer.java",
+          "src/main/resources/assets/miraculous_untold_tales/models/item/butterflymiraculouscamogab.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/ButterflymiraculouscamogabItem.java"
+        ]
+      },
+      "path": "~/Mother Box/Butterfly Miraculous/Camos"
+    },
+    {
+      "name": "LbActivetocamo",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lb_activetocamo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/LbActivetocamoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous"
+    },
+    {
+      "name": "ChangeToMariCamoLadybug",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "change_to_mari_camo_ladybug",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/ChangeToMariCamoLadybugProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Gui"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "ladybug_camos",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Cat_camos",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Butterfly_camos",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.miraculous_untold_tales.butterfly_miraculous": "Butterfly Miraculous",
       "item.miraculous_untold_tales.ladybug_miraculous": "Ladybug Miraculous",
-      "item_group.miraculous_untold_tales.miraculousous": "Miraculousous"
+      "gui.miraculous_untold_tales.mirac_choose.button_empty1": "",
+      "item.miraculous_untold_tales.ladybugmiraculousmaricamo": "Ladybugmiraculousmaricamo",
+      "curios.identifier.ears": "EARS",
+      "item.miraculous_untold_tales.cat_miraculouscamo_adrian": "Cat Miraculous",
+      "item.miraculous_untold_tales.butterflymiraculouscamogab": "Butterflymiraculouscamogab",
+      "gui.miraculous_untold_tales.mirac_choose.button_empty": "",
+      "item_group.miraculous_untold_tales.miraculousous": "Miraculousous",
+      "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous"
     }
   },
   "foldersRoot": {
@@ -44,7 +371,34 @@
         "children": [
           {
             "name": "Ladybug Miraculous",
-            "children": []
+            "children": [
+              {
+                "name": "Gui",
+                "children": []
+              },
+              {
+                "name": "Camos",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Cat Miraculous",
+            "children": [
+              {
+                "name": "Camos",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Butterfly Miraculous",
+            "children": [
+              {
+                "name": "Camos",
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -66,8 +420,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "curios_api"
+    ],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.miraculousuntoldtales",
     "lockBaseModFiles": false
   },

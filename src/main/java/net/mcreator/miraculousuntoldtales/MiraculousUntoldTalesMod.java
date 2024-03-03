@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModTabs;
+import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModMenus;
 import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModItems;
 
 import java.util.function.Supplier;
@@ -54,6 +55,7 @@ public class MiraculousUntoldTalesMod {
 
 		MiraculousUntoldTalesModTabs.REGISTRY.register(bus);
 
+		MiraculousUntoldTalesModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

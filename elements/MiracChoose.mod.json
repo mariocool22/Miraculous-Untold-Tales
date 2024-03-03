@@ -1,0 +1,58 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "miraculous_choose.png",
+          "use1Xscale": true,
+          "x": 118,
+          "y": 18
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "Openlbmainmenu"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 151,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": true,
+          "width": 25,
+          "height": 20,
+          "x": 173,
+          "y": 86
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "gab_camo_hold"
+      },
+      "name": "default"
+    }
+  }
+}

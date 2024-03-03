@@ -1,4 +1,12 @@
 {
+  "item.miraculous_untold_tales.butterfly_miraculous": "Butterfly Miraculous",
   "item.miraculous_untold_tales.ladybug_miraculous": "Ladybug Miraculous",
-  "item_group.miraculous_untold_tales.miraculousous": "Miraculousous"
+  "gui.miraculous_untold_tales.mirac_choose.button_empty1": "",
+  "item.miraculous_untold_tales.ladybugmiraculousmaricamo": "Ladybugmiraculousmaricamo",
+  "curios.identifier.ears": "EARS",
+  "item.miraculous_untold_tales.cat_miraculouscamo_adrian": "Cat Miraculous",
+  "item.miraculous_untold_tales.butterflymiraculouscamogab": "Butterflymiraculouscamogab",
+  "gui.miraculous_untold_tales.mirac_choose.button_empty": "",
+  "item_group.miraculous_untold_tales.miraculousous": "Miraculousous",
+  "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous"
 }

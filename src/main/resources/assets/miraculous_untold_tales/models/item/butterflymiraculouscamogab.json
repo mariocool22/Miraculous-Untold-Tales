@@ -1,0 +1,7 @@
+{
+  "parent": "miraculous_untold_tales:custom/butterfly_miraculous_camo_gabriel",
+  "textures": {
+    "1": "miraculous_untold_tales:block/gab_camo_hold",
+    "particle": "miraculous_untold_tales:item/gab_camo_hold"
+  }
+}

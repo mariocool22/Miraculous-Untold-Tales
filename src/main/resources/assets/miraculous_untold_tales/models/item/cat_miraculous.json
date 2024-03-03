@@ -1,0 +1,7 @@
+{
+  "parent": "miraculous_untold_tales:custom/cat_miraculous",
+  "textures": {
+    "2": "miraculous_untold_tales:block/active_cat_miraculous",
+    "particle": "miraculous_untold_tales:item/active_cat_miraculous"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "miraculous_untold_tales:custom/butterfly_miraculous",
+  "textures": {
+    "2": "miraculous_untold_tales:block/butterfly_miraculous_active",
+    "particle": "miraculous_untold_tales:item/butterfly_miraculous_active"
+  }
+}

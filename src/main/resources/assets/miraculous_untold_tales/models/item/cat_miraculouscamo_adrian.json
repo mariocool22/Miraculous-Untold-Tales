@@ -1,0 +1,7 @@
+{
+  "parent": "miraculous_untold_tales:custom/cat_miraculous_adrien_camo",
+  "textures": {
+    "0": "miraculous_untold_tales:block/adrian_cat_camo",
+    "particle": "miraculous_untold_tales:item/adrian_cat_camo"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ladybug_main_menu.png",
+          "use1Xscale": true,
+          "x": 72,
+          "y": 10
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_for_selection_menu",
+          "image": "invis_for_selection_menu.png",
+          "hoveredImage": "",
+          "x": 96,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_for_selection_menu1",
+          "image": "invis_for_selection_menu.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenLadybugCamos"
+          },
+          "x": 239,
+          "y": 45
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_for_selection_menu2",
+          "image": "invis_for_selection_menu.png",
+          "hoveredImage": "",
+          "x": 97,
+          "y": 151
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_for_selection_menu3",
+          "image": "invis_for_selection_menu.png",
+          "hoveredImage": "",
+          "x": 238,
+          "y": 153
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_for_selection_menu4",
+          "image": "invis_for_selection_menu.png",
+          "hoveredImage": "",
+          "x": 165,
+          "y": 97
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

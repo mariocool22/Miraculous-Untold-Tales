@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "2": "butterfly_miraculous_active"
+      },
+      "name": "default"
+    }
+  }
+}

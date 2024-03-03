@@ -2,7 +2,9 @@
   "mappings": {
     "default": {
       "map": {
-        "3": "ladybug_miraculous_marinette_camo"
+        "0": "mari_lb_camo_1",
+        "1": "mari_lb_camo_3",
+        "2": "mari_lb_camo_2"
       },
       "name": "default"
     }

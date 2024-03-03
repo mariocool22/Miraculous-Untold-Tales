@@ -19,4 +19,10 @@ authors="carso, MCreator"
 
 
 
+[[dependencies.miraculous_untold_tales]]
+    modId="curios_api"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
