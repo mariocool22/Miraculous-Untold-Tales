@@ -6,38 +6,34 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.PlainTextButton;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.miraculousuntoldtales.world.inventory.MiracChooseMenu;
-import net.mcreator.miraculousuntoldtales.network.MiracChooseButtonMessage;
-import net.mcreator.miraculousuntoldtales.MiraculousUntoldTalesMod;
+import net.mcreator.miraculousuntoldtales.world.inventory.ButterflyMainMenuMenu;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> {
-	private final static HashMap<String, Object> guistate = MiracChooseMenu.guistate;
+public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMainMenuMenu> {
+	private final static HashMap<String, Object> guistate = ButterflyMainMenuMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_empty;
-	Button button_empty1;
+	Button button_camos;
 
-	public MiracChooseScreen(MiracChooseMenu container, Inventory inventory, Component text) {
+	public ButterflyMainMenuScreen(ButterflyMainMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 0;
-		this.imageHeight = 0;
+		this.imageWidth = 176;
+		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("miraculous_untold_tales:textures/screens/mirac_choose.png");
+	private static final ResourceLocation texture = new ResourceLocation("miraculous_untold_tales:textures/screens/butterfly_main_menu.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -52,9 +48,6 @@ public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> 
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
-		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/miraculous_choose.png"), this.leftPos + -96, this.topPos + -102, 0, 0, 192, 192, 192, 192);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -74,6 +67,8 @@ public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> 
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.label_butterfly_miraculous_selection_m"), 7, 6, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.label_menu"), 70, 17, -12829636, false);
 	}
 
 	@Override
@@ -84,21 +79,9 @@ public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> 
 	@Override
 	public void init() {
 		super.init();
-		button_empty = new PlainTextButton(this.leftPos + -63, this.topPos + -34, 25, 20, Component.translatable("gui.miraculous_untold_tales.mirac_choose.button_empty"), e -> {
-			if (true) {
-				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new MiracChooseButtonMessage(0, x, y, z));
-				MiracChooseButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}, this.font);
-		guistate.put("button:button_empty", button_empty);
-		this.addRenderableWidget(button_empty);
-		button_empty1 = new PlainTextButton(this.leftPos + -41, this.topPos + -34, 25, 20, Component.translatable("gui.miraculous_untold_tales.mirac_choose.button_empty1"), e -> {
-			if (true) {
-				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new MiracChooseButtonMessage(1, x, y, z));
-				MiracChooseButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}, this.font);
-		guistate.put("button:button_empty1", button_empty1);
-		this.addRenderableWidget(button_empty1);
+		button_camos = Button.builder(Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.button_camos"), e -> {
+		}).bounds(this.leftPos + 59, this.topPos + 36, 51, 20).build();
+		guistate.put("button:button_camos", button_camos);
+		this.addRenderableWidget(button_camos);
 	}
 }

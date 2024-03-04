@@ -1,0 +1,52 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_a_camoflauge",
+          "text": {
+            "fixedValue": "Choose a Camoflauge"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 161,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_gabriel",
+          "text": "Gabriel",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetToGabCamo"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 146,
+          "y": 75
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

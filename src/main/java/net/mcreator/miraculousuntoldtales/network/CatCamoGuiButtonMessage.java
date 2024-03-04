@@ -11,40 +11,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.miraculousuntoldtales.world.inventory.MiracChooseMenu;
-import net.mcreator.miraculousuntoldtales.procedures.OpenlbmainmenuProcedure;
-import net.mcreator.miraculousuntoldtales.procedures.OpenCatMainMenuProcedure;
+import net.mcreator.miraculousuntoldtales.world.inventory.CatCamoGuiMenu;
+import net.mcreator.miraculousuntoldtales.procedures.SettoAdrianCamoProcedure;
 import net.mcreator.miraculousuntoldtales.MiraculousUntoldTalesMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class MiracChooseButtonMessage {
+public class CatCamoGuiButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public MiracChooseButtonMessage(FriendlyByteBuf buffer) {
+	public CatCamoGuiButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public MiracChooseButtonMessage(int buttonID, int x, int y, int z) {
+	public CatCamoGuiButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(MiracChooseButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(CatCamoGuiButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(MiracChooseButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(CatCamoGuiButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -59,22 +58,18 @@ public class MiracChooseButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = MiracChooseMenu.guistate;
+		HashMap guistate = CatCamoGuiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			OpenlbmainmenuProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 1) {
-
-			OpenCatMainMenuProcedure.execute(world, x, y, z, entity);
+			SettoAdrianCamoProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MiraculousUntoldTalesMod.addNetworkMessage(MiracChooseButtonMessage.class, MiracChooseButtonMessage::buffer, MiracChooseButtonMessage::new, MiracChooseButtonMessage::handler);
+		MiraculousUntoldTalesMod.addNetworkMessage(CatCamoGuiButtonMessage.class, CatCamoGuiButtonMessage::buffer, CatCamoGuiButtonMessage::new, CatCamoGuiButtonMessage::handler);
 	}
 }

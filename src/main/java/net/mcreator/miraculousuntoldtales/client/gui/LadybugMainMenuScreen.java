@@ -55,7 +55,7 @@ public class LadybugMainMenuScreen extends AbstractContainerScreen<LadybugMainMe
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/ladybug_main_menu.png"), this.leftPos + -142, this.topPos + -110, 0, 0, 278, 224, 278, 224);
+		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/lb_m_m.png"), this.leftPos + -135, this.topPos + -105, 0, 0, 278, 224, 278, 224);
 
 		RenderSystem.disableBlend();
 	}
@@ -86,11 +86,11 @@ public class LadybugMainMenuScreen extends AbstractContainerScreen<LadybugMainMe
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_invis_for_selection_menu = new ImageButton(this.leftPos + -118, this.topPos + -76, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu = new ImageButton(this.leftPos + -112, this.topPos + -74, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu.png"), 91, 94, e -> {
 		});
 		guistate.put("button:imagebutton_invis_for_selection_menu", imagebutton_invis_for_selection_menu);
 		this.addRenderableWidget(imagebutton_invis_for_selection_menu);
-		imagebutton_invis_for_selection_menu1 = new ImageButton(this.leftPos + 25, this.topPos + -75, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu1.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu1 = new ImageButton(this.leftPos + 34, this.topPos + -71, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu1.png"), 91, 94, e -> {
 			if (true) {
 				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new LadybugMainMenuButtonMessage(1, x, y, z));
 				LadybugMainMenuButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -98,15 +98,15 @@ public class LadybugMainMenuScreen extends AbstractContainerScreen<LadybugMainMe
 		});
 		guistate.put("button:imagebutton_invis_for_selection_menu1", imagebutton_invis_for_selection_menu1);
 		this.addRenderableWidget(imagebutton_invis_for_selection_menu1);
-		imagebutton_invis_for_selection_menu2 = new ImageButton(this.leftPos + -117, this.topPos + 31, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu2.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu2 = new ImageButton(this.leftPos + -114, this.topPos + 37, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu2.png"), 91, 94, e -> {
 		});
 		guistate.put("button:imagebutton_invis_for_selection_menu2", imagebutton_invis_for_selection_menu2);
 		this.addRenderableWidget(imagebutton_invis_for_selection_menu2);
-		imagebutton_invis_for_selection_menu3 = new ImageButton(this.leftPos + 24, this.topPos + 33, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu3.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu3 = new ImageButton(this.leftPos + 31, this.topPos + 37, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu3.png"), 91, 94, e -> {
 		});
 		guistate.put("button:imagebutton_invis_for_selection_menu3", imagebutton_invis_for_selection_menu3);
 		this.addRenderableWidget(imagebutton_invis_for_selection_menu3);
-		imagebutton_invis_for_selection_menu4 = new ImageButton(this.leftPos + -49, this.topPos + -23, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu4.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu4 = new ImageButton(this.leftPos + -44, this.topPos + -20, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu4.png"), 91, 94, e -> {
 		});
 		guistate.put("button:imagebutton_invis_for_selection_menu4", imagebutton_invis_for_selection_menu4);
 		this.addRenderableWidget(imagebutton_invis_for_selection_menu4);

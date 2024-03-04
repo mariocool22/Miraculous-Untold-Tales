@@ -40,6 +40,9 @@
           "name": "button_empty1",
           "text": "",
           "isUndecorated": true,
+          "onClick": {
+            "name": "OpenCatMainMenu"
+          },
           "width": 25,
           "height": 20,
           "x": 173,

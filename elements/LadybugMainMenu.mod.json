@@ -11,22 +11,13 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "ladybug_main_menu.png",
-          "use1Xscale": true,
-          "x": 72,
-          "y": 10
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_invis_for_selection_menu",
           "image": "invis_for_selection_menu.png",
           "hoveredImage": "",
-          "x": 96,
-          "y": 44
+          "x": 102,
+          "y": 46
         }
       },
       {
@@ -38,8 +29,8 @@
           "onClick": {
             "name": "OpenLadybugCamos"
           },
-          "x": 239,
-          "y": 45
+          "x": 248,
+          "y": 49
         }
       },
       {
@@ -48,8 +39,8 @@
           "name": "imagebutton_invis_for_selection_menu2",
           "image": "invis_for_selection_menu.png",
           "hoveredImage": "",
-          "x": 97,
-          "y": 151
+          "x": 100,
+          "y": 157
         }
       },
       {
@@ -58,8 +49,8 @@
           "name": "imagebutton_invis_for_selection_menu3",
           "image": "invis_for_selection_menu.png",
           "hoveredImage": "",
-          "x": 238,
-          "y": 153
+          "x": 245,
+          "y": 157
         }
       },
       {
@@ -68,8 +59,17 @@
           "name": "imagebutton_invis_for_selection_menu4",
           "image": "invis_for_selection_menu.png",
           "hoveredImage": "",
-          "x": 165,
-          "y": 97
+          "x": 170,
+          "y": 100
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lb_m_m.png",
+          "use1Xscale": true,
+          "x": 79,
+          "y": 15
         }
       }
     ],
