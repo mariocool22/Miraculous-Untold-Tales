@@ -559,6 +559,41 @@
         ]
       },
       "path": "~/Mother Box/Ladybug Miraculous/Suits"
+    },
+    {
+      "name": "TransformationChecker",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "transformation_checker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/TransformationCheckerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
