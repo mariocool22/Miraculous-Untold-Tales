@@ -15,6 +15,7 @@ import net.minecraftforge.common.capabilities.CapabilityToken;
 import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
@@ -69,6 +70,10 @@ public class MiraculousUntoldTalesModVariables {
 			clone.ladybug_camos = original.ladybug_camos;
 			clone.Cat_camos = original.Cat_camos;
 			clone.Butterfly_camos = original.Butterfly_camos;
+			clone.lb_helmet = original.lb_helmet;
+			clone.lb_Chestplate = original.lb_Chestplate;
+			clone.lb_Leggings = original.lb_Leggings;
+			clone.lb_boots = original.lb_boots;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -108,6 +113,10 @@ public class MiraculousUntoldTalesModVariables {
 		public String ladybug_camos = "";
 		public String Cat_camos = "";
 		public String Butterfly_camos = "";
+		public ItemStack lb_helmet = ItemStack.EMPTY;
+		public ItemStack lb_Chestplate = ItemStack.EMPTY;
+		public ItemStack lb_Leggings = ItemStack.EMPTY;
+		public ItemStack lb_boots = ItemStack.EMPTY;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,6 +128,10 @@ public class MiraculousUntoldTalesModVariables {
 			nbt.putString("ladybug_camos", ladybug_camos);
 			nbt.putString("Cat_camos", Cat_camos);
 			nbt.putString("Butterfly_camos", Butterfly_camos);
+			nbt.put("lb_helmet", lb_helmet.save(new CompoundTag()));
+			nbt.put("lb_Chestplate", lb_Chestplate.save(new CompoundTag()));
+			nbt.put("lb_Leggings", lb_Leggings.save(new CompoundTag()));
+			nbt.put("lb_boots", lb_boots.save(new CompoundTag()));
 			return nbt;
 		}
 
@@ -127,6 +140,10 @@ public class MiraculousUntoldTalesModVariables {
 			ladybug_camos = nbt.getString("ladybug_camos");
 			Cat_camos = nbt.getString("Cat_camos");
 			Butterfly_camos = nbt.getString("Butterfly_camos");
+			lb_helmet = ItemStack.of(nbt.getCompound("lb_helmet"));
+			lb_Chestplate = ItemStack.of(nbt.getCompound("lb_Chestplate"));
+			lb_Leggings = ItemStack.of(nbt.getCompound("lb_Leggings"));
+			lb_boots = ItemStack.of(nbt.getCompound("lb_boots"));
 		}
 	}
 
@@ -154,6 +171,10 @@ public class MiraculousUntoldTalesModVariables {
 					variables.ladybug_camos = message.data.ladybug_camos;
 					variables.Cat_camos = message.data.Cat_camos;
 					variables.Butterfly_camos = message.data.Butterfly_camos;
+					variables.lb_helmet = message.data.lb_helmet;
+					variables.lb_Chestplate = message.data.lb_Chestplate;
+					variables.lb_Leggings = message.data.lb_Leggings;
+					variables.lb_boots = message.data.lb_boots;
 				}
 			});
 			context.setPacketHandled(true);
