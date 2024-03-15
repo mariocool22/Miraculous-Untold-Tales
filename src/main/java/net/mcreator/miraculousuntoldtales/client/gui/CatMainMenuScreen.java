@@ -51,7 +51,7 @@ public class CatMainMenuScreen extends AbstractContainerScreen<CatMainMenuMenu> 
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/cat_main_menu.png"), this.leftPos + -58, this.topPos + -29, 0, 0, 276, 226, 276, 226);
+		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/cat_miraculous_main_menu.png"), this.leftPos + -60, this.topPos + -39, 0, 0, 276, 226, 276, 226);
 
 		RenderSystem.disableBlend();
 	}
@@ -82,7 +82,7 @@ public class CatMainMenuScreen extends AbstractContainerScreen<CatMainMenuMenu> 
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_invis_for_selection_menu = new ImageButton(this.leftPos + 97, this.topPos + 10, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu.png"), 91, 94, e -> {
+		imagebutton_invis_for_selection_menu = new ImageButton(this.leftPos + 97, this.topPos + 1, 91, 47, 0, 0, 47, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_for_selection_menu.png"), 91, 94, e -> {
 			if (true) {
 				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new CatMainMenuButtonMessage(0, x, y, z));
 				CatMainMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);

@@ -11,15 +11,6 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "image",
-        "data": {
-          "image": "cat_main_menu.png",
-          "use1Xscale": true,
-          "x": 68,
-          "y": 8
-        }
-      },
-      {
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_invis_for_selection_menu",
@@ -29,7 +20,16 @@
             "name": "OpenCatCamoGui"
           },
           "x": 223,
-          "y": 47
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cat_miraculous_main_menu.png",
+          "use1Xscale": true,
+          "x": 66,
+          "y": -2
         }
       }
     ],

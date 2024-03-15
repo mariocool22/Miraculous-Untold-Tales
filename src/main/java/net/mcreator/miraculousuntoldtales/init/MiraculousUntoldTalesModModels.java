@@ -10,12 +10,14 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.miraculousuntoldtales.client.model.Modelmarinette_camo_wearible;
+import net.mcreator.miraculousuntoldtales.client.model.Modelladybug_suit;
 import net.mcreator.miraculousuntoldtales.client.model.Modelgabriel_camo_wear;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class MiraculousUntoldTalesModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+		event.registerLayerDefinition(Modelladybug_suit.LAYER_LOCATION, Modelladybug_suit::createBodyLayer);
 		event.registerLayerDefinition(Modelgabriel_camo_wear.LAYER_LOCATION, Modelgabriel_camo_wear::createBodyLayer);
 		event.registerLayerDefinition(Modelmarinette_camo_wearible.LAYER_LOCATION, Modelmarinette_camo_wearible::createBodyLayer);
 	}

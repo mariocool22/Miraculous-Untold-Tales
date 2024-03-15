@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.miraculousuntoldtales.item.LadybugsuitItem;
 import net.mcreator.miraculousuntoldtales.item.LadybugmiraculousmaricamoItem;
 import net.mcreator.miraculousuntoldtales.item.LadybugMiraculousItem;
 import net.mcreator.miraculousuntoldtales.item.CatMiraculouscamoAdrianItem;
@@ -26,4 +27,8 @@ public class MiraculousUntoldTalesModItems {
 	public static final RegistryObject<Item> CAT_MIRACULOUSCAMO_ADRIAN = REGISTRY.register("cat_miraculouscamo_adrian", () -> new CatMiraculouscamoAdrianItem());
 	public static final RegistryObject<Item> BUTTERFLY_MIRACULOUS = REGISTRY.register("butterfly_miraculous", () -> new ButterflyMiraculousItem());
 	public static final RegistryObject<Item> BUTTERFLYMIRACULOUSCAMOGAB = REGISTRY.register("butterflymiraculouscamogab", () -> new ButterflymiraculouscamogabItem());
+	public static final RegistryObject<Item> LADYBUGSUIT_HELMET = REGISTRY.register("ladybugsuit_helmet", () -> new LadybugsuitItem.Helmet());
+	public static final RegistryObject<Item> LADYBUGSUIT_CHESTPLATE = REGISTRY.register("ladybugsuit_chestplate", () -> new LadybugsuitItem.Chestplate());
+	public static final RegistryObject<Item> LADYBUGSUIT_LEGGINGS = REGISTRY.register("ladybugsuit_leggings", () -> new LadybugsuitItem.Leggings());
+	public static final RegistryObject<Item> LADYBUGSUIT_BOOTS = REGISTRY.register("ladybugsuit_boots", () -> new LadybugsuitItem.Boots());
 }

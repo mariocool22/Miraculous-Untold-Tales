@@ -218,7 +218,7 @@
           }
         ]
       },
-      "path": "~/Mother Box/Ladybug Miraculous"
+      "path": "~/Mother Box/Ladybug Miraculous/Gui"
     },
     {
       "name": "OpenLadybugCamos",
@@ -254,7 +254,7 @@
           }
         ]
       },
-      "path": "~/Mother Box/Ladybug Miraculous"
+      "path": "~/Mother Box/Ladybug Miraculous/Gui"
     },
     {
       "name": "ButterflyMiraculous",
@@ -540,7 +540,25 @@
           }
         ]
       },
-      "path": "~/Mother Box/Ladybug Miraculous"
+      "path": "~/Mother Box/Butterfly Miraculous"
+    },
+    {
+      "name": "Ladybugsuit",
+      "type": "armor",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybugsuit",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybugsuit_boots.json",
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybugsuit_leggings.json",
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybugsuit_chestplate.json",
+          "src/main/java/net/mcreator/miraculousuntoldtales/item/LadybugsuitItem.java",
+          "src/main/resources/assets/miraculous_untold_tales/models/item/ladybugsuit_helmet.json"
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Suits"
     }
   ],
   "variable_elements": [
@@ -563,16 +581,29 @@
       "value": ""
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "lbtransform",
+      "files": [
+        "miraculous_ladybug_transformation_carapace_catalyst_instrumental_mp3cut.net"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
       "item.miraculous_untold_tales.ladybug_miraculous": "Ladybug Miraculous",
       "gui.miraculous_untold_tales.mirac_choose.button_empty1": "",
+      "item.miraculous_untold_tales.ladybugsuit_chestplate": "Ladybug",
       "gui.miraculous_untold_tales.butterfly_camo_selection.button_gabriel": "Gabriel",
+      "item.miraculous_untold_tales.ladybugsuit_helmet": "Ladybug",
+      "item.miraculous_untold_tales.ladybugsuit_leggings": "Ladybug",
       "item.miraculous_untold_tales.butterfly_miraculous": "Butterfly Miraculous",
       "gui.miraculous_untold_tales.butterfly_main_menu.label_menu": "menu!",
       "gui.miraculous_untold_tales.butterfly_main_menu.button_camos": "Camos",
       "gui.miraculous_untold_tales.butterfly_camo_selection.label_choose_a_camoflauge": "Choose a Camoflauge",
+      "subtitles.lbtransform": "",
       "item.miraculous_untold_tales.ladybugmiraculousmaricamo": "Ladybugmiraculousmaricamo",
       "curios.identifier.ears": "EARS",
       "gui.miraculous_untold_tales.butterfly_main_menu.label_butterfly_miraculous_selection_m": "Butterfly Miraculous Selection",
@@ -580,7 +611,8 @@
       "item.miraculous_untold_tales.butterflymiraculouscamogab": "Butterflymiraculouscamogab",
       "gui.miraculous_untold_tales.mirac_choose.button_empty": "",
       "item_group.miraculous_untold_tales.miraculousous": "Miraculousous",
-      "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous"
+      "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous",
+      "item.miraculous_untold_tales.ladybugsuit_boots": "Ladybug"
     }
   },
   "foldersRoot": {
@@ -598,6 +630,14 @@
               },
               {
                 "name": "Camos",
+                "children": []
+              },
+              {
+                "name": "Suits",
+                "children": []
+              },
+              {
+                "name": "Transform",
                 "children": []
               }
             ]

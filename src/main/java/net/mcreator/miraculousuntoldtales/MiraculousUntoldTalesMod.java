@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModTabs;
+import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModSounds;
 import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModMenus;
 import net.mcreator.miraculousuntoldtales.init.MiraculousUntoldTalesModItems;
 
@@ -50,6 +51,7 @@ public class MiraculousUntoldTalesMod {
 	public MiraculousUntoldTalesMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		MiraculousUntoldTalesModSounds.REGISTRY.register(bus);
 
 		MiraculousUntoldTalesModItems.REGISTRY.register(bus);
 

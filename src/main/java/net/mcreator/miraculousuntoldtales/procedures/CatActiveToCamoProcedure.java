@@ -26,7 +26,7 @@ public class CatActiveToCamoProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Please select a camoflauge in /menu!"), true);
+				_player.displayClientMessage(Component.literal("Please select a camoflauge for this miraculous in /menu!"), true);
 		}
 	}
 }

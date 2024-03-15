@@ -1,11 +1,15 @@
 {
   "item.miraculous_untold_tales.ladybug_miraculous": "Ladybug Miraculous",
   "gui.miraculous_untold_tales.mirac_choose.button_empty1": "",
+  "item.miraculous_untold_tales.ladybugsuit_chestplate": "Ladybug",
   "gui.miraculous_untold_tales.butterfly_camo_selection.button_gabriel": "Gabriel",
+  "item.miraculous_untold_tales.ladybugsuit_helmet": "Ladybug",
+  "item.miraculous_untold_tales.ladybugsuit_leggings": "Ladybug",
   "item.miraculous_untold_tales.butterfly_miraculous": "Butterfly Miraculous",
   "gui.miraculous_untold_tales.butterfly_main_menu.label_menu": "menu!",
   "gui.miraculous_untold_tales.butterfly_main_menu.button_camos": "Camos",
   "gui.miraculous_untold_tales.butterfly_camo_selection.label_choose_a_camoflauge": "Choose a Camoflauge",
+  "subtitles.lbtransform": "",
   "item.miraculous_untold_tales.ladybugmiraculousmaricamo": "Ladybugmiraculousmaricamo",
   "curios.identifier.ears": "EARS",
   "gui.miraculous_untold_tales.butterfly_main_menu.label_butterfly_miraculous_selection_m": "Butterfly Miraculous Selection",
@@ -13,5 +17,6 @@
   "item.miraculous_untold_tales.butterflymiraculouscamogab": "Butterflymiraculouscamogab",
   "gui.miraculous_untold_tales.mirac_choose.button_empty": "",
   "item_group.miraculous_untold_tales.miraculousous": "Miraculousous",
-  "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous"
+  "item.miraculous_untold_tales.cat_miraculous": "Cat Miraculous",
+  "item.miraculous_untold_tales.ladybugsuit_boots": "Ladybug"
 }
