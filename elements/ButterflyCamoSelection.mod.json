@@ -11,33 +11,45 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_choose_a_camoflauge",
-          "text": {
-            "fixedValue": "Choose a Camoflauge"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 161,
-          "y": 51
+          "image": "butterfly_miraculous_camo_menu.png",
+          "use1Xscale": true,
+          "x": 94,
+          "y": 8
         }
       },
       {
-        "type": "button",
+        "type": "imagebutton",
         "data": {
-          "name": "button_gabriel",
-          "text": "Gabriel",
-          "isUndecorated": false,
+          "name": "imagebutton_invis_camo_button",
+          "image": "invis_camo_button.png",
+          "hoveredImage": "",
           "onClick": {
             "name": "SetToGabCamo"
           },
-          "width": 61,
-          "height": 20,
-          "x": 146,
-          "y": 75
+          "x": 125,
+          "y": 56
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_camo_button1",
+          "image": "invis_camo_button.png",
+          "hoveredImage": "",
+          "x": 198,
+          "y": 56
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_invis_camo_button2",
+          "image": "invis_camo_button.png",
+          "hoveredImage": "",
+          "x": 273,
+          "y": 54
         }
       }
     ],

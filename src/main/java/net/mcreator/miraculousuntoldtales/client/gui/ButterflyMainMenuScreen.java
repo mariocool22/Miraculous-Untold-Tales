@@ -6,10 +6,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.miraculousuntoldtales.world.inventory.ButterflyMainMenuMenu;
+import net.mcreator.miraculousuntoldtales.network.ButterflyMainMenuButtonMessage;
+import net.mcreator.miraculousuntoldtales.MiraculousUntoldTalesMod;
 
 import java.util.HashMap;
 
@@ -20,7 +22,7 @@ public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMa
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	Button button_camos;
+	ImageButton imagebutton_invis_camo_button;
 
 	public ButterflyMainMenuScreen(ButterflyMainMenuMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -29,7 +31,7 @@ public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMa
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 0;
 		this.imageHeight = 166;
 	}
 
@@ -48,6 +50,9 @@ public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMa
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("miraculous_untold_tales:textures/screens/butterfly_miraculous_main_menu.png"), this.leftPos + -107, this.topPos + -5, 0, 0, 219, 179, 219, 179);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -67,8 +72,6 @@ public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMa
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.label_butterfly_miraculous_selection_m"), 7, 6, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.label_menu"), 70, 17, -12829636, false);
 	}
 
 	@Override
@@ -79,9 +82,13 @@ public class ButterflyMainMenuScreen extends AbstractContainerScreen<ButterflyMa
 	@Override
 	public void init() {
 		super.init();
-		button_camos = Button.builder(Component.translatable("gui.miraculous_untold_tales.butterfly_main_menu.button_camos"), e -> {
-		}).bounds(this.leftPos + 59, this.topPos + 36, 51, 20).build();
-		guistate.put("button:button_camos", button_camos);
-		this.addRenderableWidget(button_camos);
+		imagebutton_invis_camo_button = new ImageButton(this.leftPos + -86, this.topPos + 23, 50, 52, 0, 0, 52, new ResourceLocation("miraculous_untold_tales:textures/screens/atlas/imagebutton_invis_camo_button.png"), 50, 104, e -> {
+			if (true) {
+				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new ButterflyMainMenuButtonMessage(0, x, y, z));
+				ButterflyMainMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		});
+		guistate.put("button:imagebutton_invis_camo_button", imagebutton_invis_camo_button);
+		this.addRenderableWidget(imagebutton_invis_camo_button);
 	}
 }

@@ -18,7 +18,7 @@ import net.mcreator.miraculousuntoldtales.procedures.OpenMiracChooseProcedure;
 public class MenuCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("Menu")
+		event.getDispatcher().register(Commands.literal("menu")
 
 				.executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();

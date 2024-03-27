@@ -48,6 +48,21 @@
           "x": 173,
           "y": 86
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty2",
+          "text": "",
+          "isUndecorated": true,
+          "onClick": {
+            "name": "OpenButterflyMainMenu"
+          },
+          "width": 25,
+          "height": 20,
+          "x": 195,
+          "y": 86
+        }
       }
     ],
     "gridSettings": {

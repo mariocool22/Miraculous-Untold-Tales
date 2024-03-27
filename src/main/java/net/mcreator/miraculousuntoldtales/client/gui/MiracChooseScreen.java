@@ -25,6 +25,7 @@ public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> 
 	private final Player entity;
 	Button button_empty;
 	Button button_empty1;
+	Button button_empty2;
 
 	public MiracChooseScreen(MiracChooseMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -100,5 +101,13 @@ public class MiracChooseScreen extends AbstractContainerScreen<MiracChooseMenu> 
 		}, this.font);
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
+		button_empty2 = new PlainTextButton(this.leftPos + -19, this.topPos + -34, 25, 20, Component.translatable("gui.miraculous_untold_tales.mirac_choose.button_empty2"), e -> {
+			if (true) {
+				MiraculousUntoldTalesMod.PACKET_HANDLER.sendToServer(new MiracChooseButtonMessage(2, x, y, z));
+				MiracChooseButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
+		}, this.font);
+		guistate.put("button:button_empty2", button_empty2);
+		this.addRenderableWidget(button_empty2);
 	}
 }

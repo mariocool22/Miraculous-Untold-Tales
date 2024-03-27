@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 0,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -11,45 +11,25 @@
     "doesPauseGame": false,
     "components": [
       {
-        "type": "label",
+        "type": "image",
         "data": {
-          "name": "label_butterfly_miraculous_selection_m",
-          "text": {
-            "fixedValue": "Butterfly Miraculous Selection"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 133,
-          "y": 43
+          "image": "butterfly_miraculous_main_menu.png",
+          "use1Xscale": true,
+          "x": 107,
+          "y": 32
         }
       },
       {
-        "type": "label",
+        "type": "imagebutton",
         "data": {
-          "name": "label_menu",
-          "text": {
-            "fixedValue": "menu!"
+          "name": "imagebutton_invis_camo_button",
+          "image": "invis_camo_button.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "OpenButterflyCamoMenu"
           },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 196,
-          "y": 54
-        }
-      },
-      {
-        "type": "button",
-        "data": {
-          "name": "button_camos",
-          "text": "Camos",
-          "isUndecorated": false,
-          "width": 51,
-          "height": 20,
-          "x": 185,
-          "y": 73
+          "x": 128,
+          "y": 60
         }
       }
     ],

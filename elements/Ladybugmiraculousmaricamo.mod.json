@@ -5,13 +5,13 @@
     "renderType": 1,
     "texture": "mari_lb_camo_1",
     "customModelName": "ladybug_miraculous_marinette_camo:default",
-    "name": "Ladybugmiraculousmaricamo",
+    "name": "Ladybug Miraculous",
     "rarity": "COMMON",
     "slotType": "EARS",
     "baubleModel": "Modelmarinette_camo_wearible",
     "baubleModelTexture": "for_most_of_lb_camos.png",
     "creativeTab": {
-      "value": "MISC"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,

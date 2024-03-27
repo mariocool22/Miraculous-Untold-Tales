@@ -32,8 +32,6 @@ public class MiraculousUntoldTalesModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(MiraculousUntoldTalesModItems.LADYBUGMIRACULOUSMARICAMO.get());
-			tabData.accept(MiraculousUntoldTalesModItems.CAT_MIRACULOUSCAMO_ADRIAN.get());
 			tabData.accept(MiraculousUntoldTalesModItems.BUTTERFLYMIRACULOUSCAMOGAB.get());
 		}
 	}
