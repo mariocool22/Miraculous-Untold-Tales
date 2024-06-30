@@ -3,8 +3,8 @@
     "default": {
       "map": {
         "0": "mari_lb_camo_1",
-        "1": "mari_lb_camo_3",
-        "2": "mari_lb_camo_2"
+        "1": "mari_lb_camo_2",
+        "2": "mari_lb_camo_3"
       },
       "name": "default"
     }

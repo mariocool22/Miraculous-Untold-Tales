@@ -667,6 +667,62 @@
         ]
       },
       "path": "~/Mother Box/Butterfly Miraculous/guis"
+    },
+    {
+      "name": "MainMiraculous",
+      "type": "command",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_miraculous",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/command/MainMiraculousCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "SelectMainMiraculous",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "select_main_miraculous",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/SelectMainMiraculousProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LadybugTransformcheck",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ladybug_transformcheck",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/miraculousuntoldtales/procedures/LadybugTransformcheckProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mother Box/Ladybug Miraculous/Transform"
     }
   ],
   "variable_elements": [
@@ -711,6 +767,18 @@
       "type": "itemstack",
       "scope": "player_persistent",
       "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "Main_Miraculous",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Ladybug_Suits",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
     }
   ],
   "sound_elements": [

@@ -74,6 +74,8 @@ public class MiraculousUntoldTalesModVariables {
 			clone.lb_Chestplate = original.lb_Chestplate;
 			clone.lb_Leggings = original.lb_Leggings;
 			clone.lb_boots = original.lb_boots;
+			clone.Main_Miraculous = original.Main_Miraculous;
+			clone.Ladybug_Suits = original.Ladybug_Suits;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -117,6 +119,8 @@ public class MiraculousUntoldTalesModVariables {
 		public ItemStack lb_Chestplate = ItemStack.EMPTY;
 		public ItemStack lb_Leggings = ItemStack.EMPTY;
 		public ItemStack lb_boots = ItemStack.EMPTY;
+		public String Main_Miraculous = "";
+		public String Ladybug_Suits = "";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -132,6 +136,8 @@ public class MiraculousUntoldTalesModVariables {
 			nbt.put("lb_Chestplate", lb_Chestplate.save(new CompoundTag()));
 			nbt.put("lb_Leggings", lb_Leggings.save(new CompoundTag()));
 			nbt.put("lb_boots", lb_boots.save(new CompoundTag()));
+			nbt.putString("Main_Miraculous", Main_Miraculous);
+			nbt.putString("Ladybug_Suits", Ladybug_Suits);
 			return nbt;
 		}
 
@@ -144,6 +150,8 @@ public class MiraculousUntoldTalesModVariables {
 			lb_Chestplate = ItemStack.of(nbt.getCompound("lb_Chestplate"));
 			lb_Leggings = ItemStack.of(nbt.getCompound("lb_Leggings"));
 			lb_boots = ItemStack.of(nbt.getCompound("lb_boots"));
+			Main_Miraculous = nbt.getString("Main_Miraculous");
+			Ladybug_Suits = nbt.getString("Ladybug_Suits");
 		}
 	}
 
@@ -175,6 +183,8 @@ public class MiraculousUntoldTalesModVariables {
 					variables.lb_Chestplate = message.data.lb_Chestplate;
 					variables.lb_Leggings = message.data.lb_Leggings;
 					variables.lb_boots = message.data.lb_boots;
+					variables.Main_Miraculous = message.data.Main_Miraculous;
+					variables.Ladybug_Suits = message.data.Ladybug_Suits;
 				}
 			});
 			context.setPacketHandled(true);
