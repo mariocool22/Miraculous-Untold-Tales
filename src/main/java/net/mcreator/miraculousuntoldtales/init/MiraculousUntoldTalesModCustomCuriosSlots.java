@@ -14,5 +14,6 @@ public class MiraculousUntoldTalesModCustomCuriosSlots {
 	@SubscribeEvent
 	public static void enqueueIMC(final InterModEnqueueEvent event) {
 		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("ears").icon(new ResourceLocation("curios:slot/ear")).size(1).build());
+		InterModComms.sendTo("curios", SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("miraculous_slot").icon(new ResourceLocation("curios:slot/ladybug_main_menu")).size(1).build());
 	}
 }

@@ -66,17 +66,7 @@ public class CatCamoGuiScreen extends AbstractContainerScreen<CatCamoGuiMenu> {
 	}
 
 	@Override
-	public void containerTick() {
-		super.containerTick();
-	}
-
-	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-	}
-
-	@Override
-	public void onClose() {
-		super.onClose();
 	}
 
 	@Override

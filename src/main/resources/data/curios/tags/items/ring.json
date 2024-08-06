@@ -1,7 +1,7 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "minecraft:air",
-    "miraculous_untold_tales:cat_miraculouscamo_adrian"
+    "miraculous_untold_tales:cat_miraculouscamo_adrian",
+    null
   ]
 }

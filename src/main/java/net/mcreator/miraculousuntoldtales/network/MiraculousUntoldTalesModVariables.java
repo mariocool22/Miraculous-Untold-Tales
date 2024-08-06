@@ -76,6 +76,12 @@ public class MiraculousUntoldTalesModVariables {
 			clone.lb_boots = original.lb_boots;
 			clone.Main_Miraculous = original.Main_Miraculous;
 			clone.Ladybug_Suits = original.Ladybug_Suits;
+			clone.Transformed = original.Transformed;
+			clone.norm_helmet = original.norm_helmet;
+			clone.norm_chest = original.norm_chest;
+			clone.norm_legs = original.norm_legs;
+			clone.norm_boots = original.norm_boots;
+			clone.LadybugFormOn = original.LadybugFormOn;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -121,6 +127,12 @@ public class MiraculousUntoldTalesModVariables {
 		public ItemStack lb_boots = ItemStack.EMPTY;
 		public String Main_Miraculous = "";
 		public String Ladybug_Suits = "";
+		public boolean Transformed = false;
+		public ItemStack norm_helmet = ItemStack.EMPTY;
+		public ItemStack norm_chest = ItemStack.EMPTY;
+		public ItemStack norm_legs = ItemStack.EMPTY;
+		public ItemStack norm_boots = ItemStack.EMPTY;
+		public boolean LadybugFormOn = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -138,11 +150,17 @@ public class MiraculousUntoldTalesModVariables {
 			nbt.put("lb_boots", lb_boots.save(new CompoundTag()));
 			nbt.putString("Main_Miraculous", Main_Miraculous);
 			nbt.putString("Ladybug_Suits", Ladybug_Suits);
+			nbt.putBoolean("Transformed", Transformed);
+			nbt.put("norm_helmet", norm_helmet.save(new CompoundTag()));
+			nbt.put("norm_chest", norm_chest.save(new CompoundTag()));
+			nbt.put("norm_legs", norm_legs.save(new CompoundTag()));
+			nbt.put("norm_boots", norm_boots.save(new CompoundTag()));
+			nbt.putBoolean("LadybugFormOn", LadybugFormOn);
 			return nbt;
 		}
 
-		public void readNBT(Tag Tag) {
-			CompoundTag nbt = (CompoundTag) Tag;
+		public void readNBT(Tag tag) {
+			CompoundTag nbt = (CompoundTag) tag;
 			ladybug_camos = nbt.getString("ladybug_camos");
 			Cat_camos = nbt.getString("Cat_camos");
 			Butterfly_camos = nbt.getString("Butterfly_camos");
@@ -152,6 +170,12 @@ public class MiraculousUntoldTalesModVariables {
 			lb_boots = ItemStack.of(nbt.getCompound("lb_boots"));
 			Main_Miraculous = nbt.getString("Main_Miraculous");
 			Ladybug_Suits = nbt.getString("Ladybug_Suits");
+			Transformed = nbt.getBoolean("Transformed");
+			norm_helmet = ItemStack.of(nbt.getCompound("norm_helmet"));
+			norm_chest = ItemStack.of(nbt.getCompound("norm_chest"));
+			norm_legs = ItemStack.of(nbt.getCompound("norm_legs"));
+			norm_boots = ItemStack.of(nbt.getCompound("norm_boots"));
+			LadybugFormOn = nbt.getBoolean("LadybugFormOn");
 		}
 	}
 
@@ -185,6 +209,12 @@ public class MiraculousUntoldTalesModVariables {
 					variables.lb_boots = message.data.lb_boots;
 					variables.Main_Miraculous = message.data.Main_Miraculous;
 					variables.Ladybug_Suits = message.data.Ladybug_Suits;
+					variables.Transformed = message.data.Transformed;
+					variables.norm_helmet = message.data.norm_helmet;
+					variables.norm_chest = message.data.norm_chest;
+					variables.norm_legs = message.data.norm_legs;
+					variables.norm_boots = message.data.norm_boots;
+					variables.LadybugFormOn = message.data.LadybugFormOn;
 				}
 			});
 			context.setPacketHandled(true);

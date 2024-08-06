@@ -1,5 +1,5 @@
 {
-  "_fv": 57,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
@@ -10,9 +10,7 @@
     "textureLeggings": "lb_symble",
     "enableBoots": true,
     "textureBoots": "lb_symble",
-    "creativeTab": {
-      "value": "No creative tab entry"
-    },
+    "creativeTabs": [],
     "armorTextureFile": "ladybug_suit_layer_1",
     "helmetName": "Ladybug",
     "bodyName": "Ladybug",

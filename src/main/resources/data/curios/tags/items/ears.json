@@ -1,7 +1,7 @@
 {
-  "replace": "false",
+  "replace": false,
   "values": [
-    "minecraft:air",
-    "miraculous_untold_tales:ladybugmiraculousmaricamo"
+    "miraculous_untold_tales:ladybugmiraculousmaricamo",
+    null
   ]
 }

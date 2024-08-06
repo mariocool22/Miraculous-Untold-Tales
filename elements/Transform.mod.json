@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "T",
+    "keyBindingName": "Transform",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TransformOnKeyPressed"
+    }
+  }
+}

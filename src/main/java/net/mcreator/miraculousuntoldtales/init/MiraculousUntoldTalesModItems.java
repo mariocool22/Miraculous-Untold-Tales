@@ -31,4 +31,6 @@ public class MiraculousUntoldTalesModItems {
 	public static final RegistryObject<Item> LADYBUGSUIT_CHESTPLATE = REGISTRY.register("ladybugsuit_chestplate", () -> new LadybugsuitItem.Chestplate());
 	public static final RegistryObject<Item> LADYBUGSUIT_LEGGINGS = REGISTRY.register("ladybugsuit_leggings", () -> new LadybugsuitItem.Leggings());
 	public static final RegistryObject<Item> LADYBUGSUIT_BOOTS = REGISTRY.register("ladybugsuit_boots", () -> new LadybugsuitItem.Boots());
+	// Start of user code block custom items
+	// End of user code block custom items
 }
